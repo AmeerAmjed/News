@@ -1,4 +1,4 @@
-package com.example.news.ui.util
+package com.example.news.util
 
 object Constants {
 
@@ -10,6 +10,13 @@ object Constants {
         const val KEY = "53567daef3d14dd0ad749077aeb5e684"
 
     }
+
+    object User{
+        const val AVATER = "https://source.unsplash.com/random"
+
+    }
+
+
 
 
 }

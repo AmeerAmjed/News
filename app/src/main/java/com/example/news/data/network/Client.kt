@@ -1,7 +1,7 @@
 package com.example.news.data.network
 
 import com.example.news.data.model.NewsModel
-import com.example.news.ui.util.Constants
+import com.example.news.util.Constants
 import com.google.gson.Gson
 import okhttp3.OkHttpClient
 import okhttp3.Request
