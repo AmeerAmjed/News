@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
+import com.example.news.R
 
 abstract class BaseFragment<VB: ViewBinding>: Fragment() {
 
@@ -16,7 +17,7 @@ abstract class BaseFragment<VB: ViewBinding>: Fragment() {
     abstract fun bindingInflater(): VB
 
     abstract fun setUp()
-    abstract fun callBack()
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,7 +27,6 @@ abstract class BaseFragment<VB: ViewBinding>: Fragment() {
         _binding = bindingInflater()
 
         setUp()
-        callBack()
 
         return _binding.root
     }
