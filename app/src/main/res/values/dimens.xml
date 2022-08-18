@@ -18,4 +18,6 @@
     <dimen name="font_size_titleExtra">32sp</dimen>
 
     <dimen name="height_animation">100dp</dimen>
+    <dimen name="elevation_card">15dp</dimen>
+    
 </resources>
