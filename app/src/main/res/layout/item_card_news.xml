@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/spacing_medium"
+    app:cardCornerRadius="@dimen/radius_medium"
+    android:layout_marginHorizontal="@dimen/spacing_medium"
+    android:id="@+id/card_news">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/radius_medium"
+            android:layout_marginStart="@dimen/radius_medium"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image_user" />
+
+        <TextView
+            android:id="@+id/name_user"
+            style="@style/DefaultTextStyle.title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_medium"
+            app:layout_constraintStart_toEndOf="@+id/image_user"
+            app:layout_constraintTop_toTopOf="@+id/image_user"
+            tool:text="Ameer Amjed" />
+
+        <TextView
+            android:id="@+id/date_published_at"
+            style="@style/CaptionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tool:text="22:00"
+            app:layout_constraintBottom_toBottomOf="@+id/image_user"
+            app:layout_constraintStart_toStartOf="@+id/name_user" />
+
+        <ImageView
+            android:id="@+id/image_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:contentDescription="@string/image_user"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_margin="@dimen/radius_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/title_content"
+            app:layout_constraintTop_toBottomOf="@+id/image_user" />
+
+        <TextView
+            android:id="@+id/title_content"
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/image_content"
+            app:layout_constraintTop_toBottomOf="@+id/image_content"
+            tool:text="Ameer Amjed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
