@@ -6,6 +6,7 @@
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_marginTop="@dimen/spacing_medium"
     app:cardCornerRadius="@dimen/radius_medium"
+    app:cardElevation="@dimen/elevation_card"
     android:layout_marginHorizontal="@dimen/spacing_medium"
     android:id="@+id/card_news">
 
@@ -30,6 +31,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_medium"
+            android:ellipsize="end"
+            android:lines="1"
             app:layout_constraintStart_toEndOf="@+id/image_user"
             app:layout_constraintTop_toTopOf="@+id/image_user"
             tool:text="Ameer Amjed" />
@@ -58,9 +61,12 @@
         <TextView
             android:id="@+id/title_content"
             style="@style/DefaultTextStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginHorizontal="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:ellipsize="end"
+            android:lines="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/image_content"
             app:layout_constraintTop_toBottomOf="@+id/image_content"
