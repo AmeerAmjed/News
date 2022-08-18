@@ -19,5 +19,5 @@
 
     <dimen name="height_animation">100dp</dimen>
     <dimen name="elevation_card">15dp</dimen>
-
+    
 </resources>
