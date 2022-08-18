@@ -1,4 +1,4 @@
-package com.example.news.ui.data.model
+package com.example.news.data.model
 
 data class Article(
     val author: String,

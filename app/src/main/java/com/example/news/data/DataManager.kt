@@ -1,4 +1,6 @@
-package com.example.news.ui.data
+package com.example.news.data
 
 class DataManager {
+
+
 }

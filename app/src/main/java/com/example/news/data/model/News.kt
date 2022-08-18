@@ -1,6 +1,6 @@
-package com.example.news.ui.data.model
+package com.example.news.data.model
 
-data class News(
+data class NewsModel(
     val articles: List<Article>,
     val status: String,
     val totalResults: Int
